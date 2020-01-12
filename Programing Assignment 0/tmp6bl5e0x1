@@ -3,10 +3,6 @@
 Created on Sat Jan  4 23:26:46 2020
 
 @author: Pree T.
-@email: pree.t@cmu.ac.th
-This program is to demonstrate the numpy and the concept of the
-simple hold out sampling method.
-
 """
 import sys
 import numpy as np
@@ -51,20 +47,17 @@ def holdout(arr, test_size, shuffle, **random):
     return train, train_y, test, test_y
     
 def main(argv):
-    if len(argv) != 4:
-        print ('Error: wrong number of arguments.')
+ 
+    if len(sys.argv) != 3:
         sys.exit(1)
-    rows = int(argv[0])
-    cols = int(argv[1])
-    shuffle = int(argv[2])
-    seed = int(argv[3])
-    
+    rows = int(sys.argv[0])
+    cols = int(sys.argv[1])
     arr = toydata(rows, cols)
     print('array shape is:\n', arr.shape)
     print('Top 5 row is:\n', arr[:5])
     print('Buttom 5 row is:\n', arr[-5:])
     print()
-    train, train_y, test, test_y = holdout(arr, 0.2, shuffle, random=seed)
+    train, train_y, test, test_y = holdout(arr, 0.2, 1, random=3)
     
     print('After the simple holdout method:')
     

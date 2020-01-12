@@ -52,7 +52,6 @@ def holdout(arr, test_size, shuffle, **random):
     
 def main(argv):
     if len(argv) != 4:
-        print ('Error: wrong number of arguments.')
         sys.exit(1)
     rows = int(argv[0])
     cols = int(argv[1])
