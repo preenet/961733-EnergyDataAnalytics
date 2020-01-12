@@ -1,0 +1,61 @@
+Creating a toy dataset...
+array shape is:
+ (5555, 7)
+Top 5 row is:
+ [[ 0 36 13 94 67 73  0]
+ [ 1 21 18 82 28 57  0]
+ [ 2 35 90 10 79 56  0]
+ [ 3 26 65 36 73 97  0]
+ [ 4 35 69 84 40 29  1]]
+Buttom 5 row is:
+ [[5550   72   26   28   36   68    0]
+ [5551   92   55   48   10   88    1]
+ [5552   85   38   45    2    5    1]
+ [5553   89   74    0   25   95    0]
+ [5554   18   76   56    5   41    1]]
+
+Performing a simple hold-out method..
+shuffle state is 1
+random state is {'random': 7}
+After the simple holdout method:
+Training set:
+top 5 row(train) is:
+ [[4789   37   21   13   31   83]
+ [ 444   30   65   68   97   65]
+ [1208   70   65   71    3   44]
+ [4175   30   53   71   32   45]
+ [ 971   75   44   36   62   85]]
+buttom 5 row(train) is:
+ [[4552   61   71   31   81   94]
+ [2115   93   11   95   72   49]
+ [1307   13   33   86    0    7]
+ [1672   22   14   94   24   18]
+ [1199   46   45   63   65   75]]
+top 5 row(train_y) is:
+ [83 65 44 45 85]
+buttom 5 row(train_y) is:
+ [94 49  7 18 75]
+
+Testing set:
+top 5 row(test) is:
+ [[2229   35    0    4   54   29]
+ [5470   51   79   65   33   67]
+ [ 293   50   55   33   57   52]
+ [2690   83   54   92   15   42]
+ [4222   21   66   14   89   56]]
+buttom 5 row(test) is:
+ [[4307   51   33   22   10   76]
+ [2550    2    9   28   20   98]
+ [ 537   37   60   85   77   87]
+ [1220   21   41    2   50   98]
+ [4271   81    5   95   88    8]]
+top 5 row(test_y) is:
+ [29 67 52 42 56]
+buttom 5 row(test_y) is:
+ [76 98 87 98  8]
+
+train shape: (4444, 6)
+train_y shape: (4444,)
+test shape (1111, 6)
+test_y shape (1111,)
+program terminated properly.
